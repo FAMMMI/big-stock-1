@@ -8,10 +8,10 @@ module.exports = {
     themes: [
       {
         doctorstheme: {
-          primary: "#03fc6b",
-          secondary: "#039dfc",
+          primary: "#4406c9",
+          secondary: "#9f4de8",
           accent: "#071536",
-          neutral: "#3d4451",
+          neutral: "#b29ff5",
           velvet: "#902C3E",
           "base-100": "#ffffff",
         },

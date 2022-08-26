@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Car = ({ car }) => {
     const { id, img, name, year, price, color, stock } = car;
+    const navigate = useNavigate();
+    // const [instrument, setInstrument] = useState([]);
+    // useEffect(() => {
+    //     fetch(`cars.json`)
+    //         .then(res => res.json())
+    //         .then(data => setInstrument(data));
+    // }, [instrument])
+
+    const newPath = (id) => {
+        navigate(`/car/${id}`);
+    }
     return (
         <div class="card lg:max-w-lg bg-base-100 shadow-xl">
             <figure class="px-10 pt-10 h-full">
@@ -16,7 +28,7 @@ const Car = ({ car }) => {
 
 
 
-                <button className='btn btn-secondary text-white font-xl'>Edit </button>
+                <button onClick={() => newPath(car._id)} className='btn bg-gradient-to-r from-primary  to-secondary text-white font-xl px-16 '>Update</button>
 
 
             </div>

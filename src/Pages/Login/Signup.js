@@ -47,7 +47,7 @@ const Register = () => {
             <p className='registration-header mt-4 mb-3 text-center text-4xl text-secondary font-bold'>Welcome To Big Stock</p>
             <div className='login-signup-container'>
                 <div className='register-form'>
-                    <h2 className='register-header text-2xl text-primary font-bold' style={{ textAlign: 'center' }}>Please Register</h2>
+                    <h2 className='register-header text-2xl text-secondary font-bold' style={{ textAlign: 'center' }}>Please Register</h2>
                     <form className='card-body items-center text-center' onSubmit={handleRegister}>
                         <div className="input-group form-control">
                             <label className='label' htmlFor='name'>
@@ -91,14 +91,14 @@ const Register = () => {
                         </div>
                         <input
                             disabled={!agree}
-                            className='w-50 mx-auto btn btn-primary text-white font-bold  mt-2 register-btn'
+                            className='w-50 mx-auto btn btn-secondary text-white font-bold  mt-2 register-btn'
                             type="submit"
                             value="Sign Up" />
 
 
                     </form>
                     <p className='text-center d-flex'>
-                        Already have an account? <Link className='form-link ' to='/login'><span className='text-primary font-bold'>Login</span></Link>
+                        Already have an account? <Link className='form-link ' to='/login'><span className='text-secondary font-bold'>Login</span></Link>
                     </p>
                     <SocialLogin></SocialLogin>
 
